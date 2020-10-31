@@ -1,21 +1,16 @@
 # Saints
 
-**TODO: Add description**
+Saints As A Service
 
-## Installation
+## Up and running
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `saints` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:saints, "~> 0.1.0"}
-  ]
-end
+```bash
+docker build -t saints .
+docker run -p 8080:8080 -it -d saints
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/saints](https://hexdocs.pm/saints).
+## Endpoints
 
+- `/today`: saints of the day
+
+- `/random`: one random saint
